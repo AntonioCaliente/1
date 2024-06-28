@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedir Perdón</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .button-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .btn-yes {
+            font-size: 18px;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        .btn-no {
+            font-size: 18px;
+            padding: 10px 20px;
+            background-color: #FF5733;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: transform 0.3s ease, margin-left 0.3s ease;
+        }
+        .btn-no:hover {
+            transform: scale(1.2);
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>¿Me perdonas?</h1>
+    <p>¡Hola amor! Cometí un error y quiero pedirte perdón. ¿Me perdonas?</p>
+    <div class="button-container">
+        <button class="btn-yes" onclick="showForgivenessMessage()">Sí</button>
+        <button class="btn-no" onclick="swapButtons()">No</button>
+    </div>
+    <p id="forgiveness-message" style="display: none; font-weight: bold; margin-top: 20px;">Sabía que me perdonarías. 😊</p>
+
+    <script>
+        function showForgivenessMessage() {
+            document.getElementById("forgiveness-message").style.display = "block";
+        }
+
+        function swapButtons() {
+            const btnYes = document.querySelector(".btn-yes");
+            const btnNo = document.querySelector(".btn-no");
+            btnYes.style.transform = "scale(1.2)";
+            btnNo.style.marginLeft = "0";
+        }
+    </script>
+</body>
+</html>
