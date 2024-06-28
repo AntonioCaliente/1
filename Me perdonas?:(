@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Me perdonas?</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f0f0f0;
+            margin-top: 50px;
+        }
+        h1 {
+            color: #333;
+        }
+        .container {
+            margin: auto;
+            width: 50%;
+            padding: 10px;
+        }
+        .pug-image {
+            max-width: 100%;
+            height: auto;
+        }
+        .button-container {
+            margin-top: 20px;
+        }
+        .button {
+            padding: 15px 25px;
+            font-size: 16px;
+            margin: 10px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            color: #fff;
+        }
+        .yes-button {
+            background-color: #4CAF50;
+        }
+        .no-button {
+            background-color: #f44336;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>¿Me perdonas?</h1>
+        <img src="https://images.app.goo.gl/iu7XG9Zv9cTKCzXz6" alt="Pug triste" class="pug-image">
+        <div class="button-container">
+            <button class="button yes-button" onclick="alert('¡Sabía que me perdonarías! Eres la mejor.')">Sí</button>
+            <button class="button no-button" onclick="alert('¡No puedes decir no a este pug! ¡Perdóname por favor!')">No</button>
+        </div>
+    </div>
+</body>
+</html>
